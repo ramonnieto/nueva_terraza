@@ -1,2 +1,1 @@
-# app_dentista
-## Aplicación para seguimientos de la Clinica
+Aplicación para agilizar la respuesta en la terraza 

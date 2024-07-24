@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "terraza-automatizada",
+  "private_key_id": "28990c21e20b86351f8e9639cf83835dc99b01a0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+QOZIcVwhlwgI\n3WyaN1WozsOMdew/oWCrFACaHfoFXjvnY3TjDDSI95YtVKOqXnAcXH1L9j679T9E\nDqcmzBZfJ9iBJlFDNtf1GTBkec01oG7UdQPbfVhTaaXG0/sTGLyrOAexZGo6+Jkn\nBnPtmOlLt6/WlqO5YoT/r4KNQrYPiKzCjLg/PUQEAiezY2tB+zUfHtiazfBCWN7b\nDityXfjhOggEsA5McMQ3blPcGPq5S3legxNRyYVhlQXM7D6+JNCA6yA5KxuP0UQl\nuObeY42r3uMxQiHJDo6xkCLyApD6G/2a8+9IaGtzaGX3zZSQMrAZZgwe+aK/AVBr\nMff/PouFAgMBAAECggEAGG2PU95gSLzSbob1tpBjyn6v24VZnerr1VOGZ0NxkoZg\ntStPOwbaaPq3ON9M+2dQSEf024/Eys/ovWWPPztFpRah5SVFGlb8oA8JqGD+QQQ2\nLsfOhLxhnqYqP68AphlPQkG5tSRyQlugmILq2CdBzzPI20nwwDEe6BCCN/6Ij1JR\nrbQT5NbBF33xtY4hqrJYY1tzUdQVg4ZXfHkFo38q5FewJ2dLPmYl7VYhm+/JlCcO\ndNTvwsgV4uCeYNFCnPT2DTi6MwPvTPENPyX+ZDyvewPJ5YMtn3D/0+Lun7yo8gbh\n3UKTLPdTHDNZdDhTr2qtx5oK8qBJrzM5lavbWanCwQKBgQDp1clvzWIU1dhnKlQ2\nsfMa9B9QRu+ILtmBk5eiNMqWM+gGthLu46mjMRh8DPOOazOEAJhAhfONXb8cbiMb\n8b5fkpL9kW/tnm9qjFwEcR24La5NNu2yKI7nJY3O0MPQd4EufAb68MPV325EcgUX\nFIcQOxyBvG+Y0jXPB4ZgCuASRQKBgQDQSZE6GlsVb2dUSouioy6y0sEVnC3Ueg6c\nEd2PNd6UJtloy4In8dIMZ/uoBzQKbeGa2OmFILw360yqrbDG6kICddyTYR+aX5fc\nIh7+6SbnEEeDGVYBnVS6NQe0nj5frxxiCR82/1VM2/dXsiGKXgkATrw3uo1/XWZk\n8Il/IQTIQQKBgQCSiYU46S6j+/cnf6FSvWWp6H6PIkUNxL5Ns5586jRiuJiZTBTF\nXCp8uFGtu7gN8iRQfsbq+IbOeoc/W83ovzAcWJCBE1lfQcB0tw0bQ3/qYcYvYVLI\nKR6UwDYD+1QbGij8ZoFBVQyExQYnIoUKF7UkeMa+jsYosONDoGWXXnlZOQKBgESM\nwcgunmWKmaZLNnObYyYlaLi1AvxYA3DoDFQytYNq2ci8maSN2MSOgGuHm2AHU+XD\nl+9hm7CHt17A9VoyBPGMWsECiQUkivU/IZZho5UObYq/DuhPIHB8PYH7Rqn1FtFJ\nEUXneOpnxprNHG7OjgXU4+svcZxGYAm+hHIbqthBAoGBAI7ThSx1FSLcKk/pnE/o\nmGbfKX9u6ZRrd2YmO+PZutQsLwOjPLCZqIPyTZHPtPzzRYabkDDaJJTY1eh+dbW7\nQjXraN9QJNGJYO1wZr6PwCOxNCHs2X+VIWwA8pzVR426GnUlUVdr6WMhv7skUfPR\nFO9hES1I95gVxlOBJMPBGpQK\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-xy2wf@terraza-automatizada.iam.gserviceaccount.com",
+  "client_id": "102378611399258936232",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xy2wf%40terraza-automatizada.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
