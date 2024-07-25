@@ -12,7 +12,7 @@ print("---------------------------")
 print("Bienvenido a terraza PePe")
 print("---------------------------")
 
-mesa = 1  # iniciamos variable
+mesa = 1  # iniciamos variable este valor vendra de QR
 
 ## Comento el acceso por cliente, ahora accedería por número de mesa en terraza (automatica)
 #while tipo_perfil != "client" and tipo_perfil != "doctor": # bucle para definir un perfil 
@@ -35,6 +35,7 @@ if mesa == 1:
   
     print(client)    
 
+    # Puede actualizar el pedido
     print (f"Ha pedido {client['racion_1']} {client['racion_2']} {client['racion_3']}, \n Gracias {mesa_name}")
     #print ("Bienvenido " + client["racion_1"] + " " + client["apellido_client"])
     while True:
@@ -61,5 +62,4 @@ if mesa == 1:
             newtelf = input("Introduce nuevo Apellido: ")
             db.collection("terraza").document(mesa).update({"racion_3": newtelf})
 
-# Mejoras: el cliente puede consultar su historial
-# perfil doctor
+# Mejoras: el cliente puede consultar su historial de pedidos
