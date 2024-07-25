@@ -33,7 +33,8 @@ if mesa == 1:
         client["racion_3"]=(input("Qué tercera ración quieres "))
         db.collection("terraza").document(mesa).set(client)
   
-    print(client)    
+    #
+        print(client)    
 
     # Puede actualizar el pedido
     print (f"Ha pedido {client['racion_1']} {client['racion_2']} {client['racion_3']}, \n Gracias {mesa_name}")
