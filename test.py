@@ -14,30 +14,16 @@ raciones = [
 ] 
 
 #bucle que dibuja tabla
-@app.get("/carpe")
+@app.get("/terraza")
 def list_raciones(request: Request):
     return templates.TemplateResponse(
-        "carpe.html",
+        "terraza.html",
         {
             "request": request,
             "name": "Raciones",
             "raciones": raciones
         })
-'''
-@app.get("/carpe", response_class=HTMLResponse)
-async def home(request: Request):
-    return templates.TemplateResponse(
-        request=request,                
-        name="carpe.html", 
-        context={})
-'''   
-'''     
-@app.get("/carpe",response_class=HTMLResponse)
-def read_root():
-    f = open("carpe.html","r")
-    return HTMLResponse(f.read())
 
-'''
 
 if __name__ == "__main__":
     import uvicorn
