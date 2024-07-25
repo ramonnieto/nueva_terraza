@@ -12,18 +12,18 @@ print("---------------------------")
 print("Bienvenido a terraza PePe")
 print("---------------------------")
 
-mesa = 2  # iniciamos variable
+mesa = 1  # iniciamos variable
 
 ## Comento el acceso por cliente, ahora accedería por número de mesa en terraza (automatica)
 #while tipo_perfil != "client" and tipo_perfil != "doctor": # bucle para definir un perfil 
 #    tipo_perfil=input("Que perfil ejecutar un valor client o doctor: ")
 
-if mesa == 2:
+if mesa == 1:
     # se implementa el espacio cliente
     print("#######################")
-    print(f"## Su número de mesa es { mesa } ###") ## Deberá ser automatico delegado del QR
+    print(f"## Su mesa es la número { mesa } ###") ## Deberá ser automatico delegado del QR
     print("#######################") 
-    mesa_name=input("Dame un nombre para el pedido: ") ## PAra pruebas lo pedimos
+    mesa_name=input("Dame un nombre para el pedido: ") ## Para pruebas lo pedimos
     mesa = "Mesa_" + str(mesa)
     client=db.collection("terraza").document(mesa).get().to_dict()
     if client is None:    # Si no existe el registro
@@ -35,14 +35,14 @@ if mesa == 2:
   
     print(client)    
 
-    print (f"Ha pedido {client['racion_1']} {client['racion_2']} {client['racion_3']} Gracias {mesa_name}")
+    print (f"Ha pedido {client['racion_1']} {client['racion_2']} {client['racion_3']}, \n Gracias {mesa_name}")
     #print ("Bienvenido " + client["racion_1"] + " " + client["apellido_client"])
     while True:
-        print("""
-        Seleccione informacion que desea modificar:
-        1. Pedido 1
-        2. Pedido 2
-        3. Pedido 3
+        print(f"""
+        Quiere cambiar su pedido ?:
+        1. Pedido {client["racion_1"]}
+        2. Pedido {client["racion_2"]}
+        3. Pedido {client["racion_3"]}
 
         6. exit
         """)
