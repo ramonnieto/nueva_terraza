@@ -1,0 +1,43 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    color:steelblue;
+    text-align: center;
+    width: 100%; }
+.table {
+    width: 230px;
+    overflow: auto;
+    border-collapse: collapse; width:300px; 
+    padding: 5px; border: solid 1px #777;
+    background-color: lightblue; }
+.th {    
+    overflow: auto;
+    text-align: center;
+    border-collapse: collapse; width:300px; 
+    padding: 5px; border: solid 1px #777;
+    background-color: lightblue; }
+
+.img {
+    width:50px;
+    height:50px;
+   } 
+   .btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Green */
+  .success {
+    border-color: #04AA6D;
+    color: green;
+  }
+  
+  .success:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
