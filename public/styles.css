@@ -1,0 +1,54 @@
+/* public/styles.css */
+.items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los artículos */
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item h3, .item p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.img {
+    width:50px;
+    height:50px;
+   } 
+   .btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Green */
+  .success {
+    border-color: #04AA6D;
+    color: green;
+  }
+  
+  .success:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .container {
+    font-family: Arial, Helvetica, sans-serif;
+    color:steelblue;
+    text-align: center;
+    width: 100%; }

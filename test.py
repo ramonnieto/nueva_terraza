@@ -24,7 +24,15 @@ def list_raciones(request: Request):
             "raciones": raciones
         })
 
-
+@app.get("/IA")
+def list_raciones(request: Request):
+    return templates.TemplateResponse(
+        "exampleIA.html",
+        {
+            "request": request,
+            "name": "Raciones",
+            "raciones": raciones
+        })
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("test:app", reload=True)

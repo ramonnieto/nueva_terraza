@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bienvenidos a nuestro local terraza Pepe</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        function addItem(name, description, price, index) {
+            const itemsContainer = document.getElementById('items-container');
+            const item = document.createElement('div');
+            item.className = 'item';
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.id = `item-${index}`;
+            checkbox.name = 'items';
+            checkbox.value = JSON.stringify({ name, description, price });
+
+            const itemName = document.createElement('label');
+            itemName.htmlFor = `item-${index}`;
+            itemName.textContent = name;
+
+            const itemDescription = document.createElement('p');
+            itemDescription.textContent = description;
+
+            const itemPrice = document.createElement('p');
+            itemPrice.textContent = `Precio: ${price} €`;
+
+            item.appendChild(checkbox);
+            item.appendChild(itemName);
+            item.appendChild(itemDescription);
+            item.appendChild(itemPrice);
+
+            itemsContainer.appendChild(item);
+        }
+
+        function loadItems() {
+            const items = [
+                { name: 'Calamares a la Romana', description: 'Calamares frescos', price: 10.0 },
+                { name: 'Patatas Bravas', description: 'Bravas con su toque picante', price: 20.0 },
+                { name: 'Lacon de la casa', description: 'Espectacular ración con toque de pimentón', price: 15.0 },
+                { name: 'Huevos Rotos', description: 'Con una manta de patatas al ajo y beicón', price: 25.0 },
+            ];
+
+            items.forEach((item, index) => addItem(item.name, item.description, item.price, index));
+        }
+
+        async function submitOrder() {
+            const selectedItems = [];
+            const checkboxes = document.querySelectorAll('input[name="items"]:checked');
+            checkboxes.forEach(checkbox => {
+                selectedItems.push(JSON.parse(checkbox.value));
+            });
+
+            if (selectedItems.length === 0) {
+                alert("Please select at least one item.");
+                return;
+            }
+
+            const response = await fetch('/submit_order', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ items: selectedItems })
+            });
+
+            const result = await response.json();
+            if (result.status === "success") {
+                alert("Order submitted successfully!");
+            } else {
+                alert("Failed to submit order.");
+            }
+        }
+
+        window.onload = loadItems;
+    </script>
+</head>
+<body>
+    <h1 class="container">Raciones Terraza</h1>
+    <div id="items-container" class="items-container">
+        <!-- Los artículos se cargarán aquí dinámicamente -->
+    </div>
+    <form onsubmit="event.preventDefault(); submitOrder();">
+        <button class="btn success" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
