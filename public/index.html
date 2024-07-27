@@ -85,14 +85,7 @@
             const result = await response.json();
             if (result.status === "success") {
                 alert("Gracias por hacer el pedido, ya estamos en marcha!");
-<!-- Comentario añadiendo redirección a / -->
-                const responde = await fetch('/index.html', {
-                    
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ items: selectedItems })
-                });
+                window.location.href = "/gracias.html";
 
             } else {
                 alert("Failed to submit order.");
