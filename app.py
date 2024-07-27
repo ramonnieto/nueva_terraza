@@ -9,10 +9,15 @@ db = firestore.client()
 
 # Inicializa Flask
 app = Flask(__name__, static_url_path='', static_folder='public')
-
+mesa = 1  # iniciamos variable este valor vendra de QR
 @app.route('/')
 def serve_index():
     return send_from_directory('public', 'index.html')
+
+@app.route('/thx')
+def serve_thx():
+    return send_from_directory('public', 'gracias.html')
+
 
 @app.route('/submit_order', methods=['POST'])
 def submit_order():

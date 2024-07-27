@@ -2,7 +2,9 @@
 .items-container {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espacio entre los artículos */
+    gap: 5px; /* Espacio entre los artículos */
+    height: 20%;
+    width: 80%;
 }
 
 .item {
@@ -23,10 +25,12 @@
     margin-right: 10px;
 }
 
-.img {
-    width:50px;
-    height:50px;
-   } 
+.item img {
+    max-width: 70px; /* Ajusta el tamaño de las imágenes */
+    margin-right: 80px;
+}
+
+
    .btn {
     border: 2px solid black;
     border-radius: 5px;
@@ -52,3 +56,5 @@
     color:steelblue;
     text-align: center;
     width: 100%; }
+
+ 
