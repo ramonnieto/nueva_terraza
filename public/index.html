@@ -3,7 +3,7 @@
 <head>
     <title>Proyecto Google Cloud - Terraza</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
     <script>
         $(document).ready(function(){
             $('.zoom').hover(function() {
@@ -12,7 +12,7 @@
                 $(this).removeClass('transition');
             });
         });
-        </script>
+        </script>-->
     <script>
         function addItem(name, description, price, imageUrl, index) {
             const itemsContainer = document.getElementById('items-container');
@@ -85,7 +85,15 @@
             const result = await response.json();
             if (result.status === "success") {
                 alert("Gracias por hacer el pedido, ya estamos en marcha!");
-                
+<!-- Comentario añadiendo redirección a / -->
+                const responde = await fetch('/index.html', {
+                    
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ items: selectedItems })
+                });
+
             } else {
                 alert("Failed to submit order.");
             }
